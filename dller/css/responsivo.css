@@ -1,0 +1,107 @@
+/*Estilo para tablets*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    
+    
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #6a3f5f; /* COr header logo */
+	height: 86px;
+	z-index: 10;
+}
+
+.header_menu {
+	text-align: left;
+}
+
+.header_menu ul li {
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 30px;
+}
+
+.header_menu ul li a {
+	color: #fff;
+	font-weight: bold;	
+	letter-spacing: .1em;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 0;
+     transition: all .5s ease;
+}
+
+.header_menu ul li a:hover {
+	color: #FFF;
+    text-transform: uppercase;
+}
+
+.header_menu ul li a.menu_ativo {
+	color: #FFF;
+}
+
+article.carrosselhome {
+   
+    width: 100%;
+padding: 86px 0px 0px 0px;
+    margin: 0px;
+    
+    }
+
+
+
+
+}/* Final do estilo para tablets */
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 767px) {
+
+/*Header*/
+    
+    .header {
+    height: 350px;
+    }
+.headermobile {
+	position: relative;
+	padding-bottom: 0px;
+    
+}
+
+.headermobile img {
+	margin: 0 auto 10px auto;
+}
+
+.header_menu {
+	text-align: center;
+}
+
+.header_menu ul li {
+	margin: 5px;
+}
+
+.header_menu ul li a {
+	border: 4px solid #fff;
+	width: 136px;
+	display: block;
+	float: left;
+}
+
+.header_menu ul li a:hover {
+	border-color: #fff;
+}
+
+.header_menu ul li a.menu_ativo {
+	border-color: #fff;
+}
+    
+article.carrosselhome {
+    height: 250px;
+    width: 100%;
+padding: 350px 0px 0px 0px;
+    margin: 0px;
+    }
+    .asidehome{
+     display: none;
+    }
+
+} /* Final do estilo para smartphone 

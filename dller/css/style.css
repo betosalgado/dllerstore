@@ -1,0 +1,491 @@
+/* Estilos Gerais */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.imglogo {
+	margin-top: 5px;
+	max-width: 100%;
+}
+
+
+/* Header */
+
+.header {
+	
+	top: 0;
+	width: 100%;
+	background: #6a3f5f; /* COr header logo */
+	height: 120px;
+    
+}
+
+
+.header_menu {
+	text-align: right;
+}
+
+.header_menu ul li {
+	display: inline-block;
+	margin-left: 25px;
+	margin-top: 30px;
+    
+}
+
+.header_menu ul li a {
+	color: #fff;
+	font-weight: bold;	
+	letter-spacing: .1em;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 0;
+    transition: all .5s ease;
+    
+}
+
+.header_menu ul li a:hover {
+	color: #FFF;
+    
+    border: solid 1px;
+    border-radius: 12px;
+    padding: 10px 3px;
+}
+
+/* Carrossel de abertura */
+article.carrosselhome {
+    
+    width: 100%;
+padding: 0px 0px 0px 0px;
+    margin: 0px;
+    
+}
+.imgabertura{
+width: 100%;
+}
+
+.rslides{
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.rslides li{
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	width: 100%;
+	border: 0;
+}
+
+.asidehome{
+width: 100%;
+    height: 70px;
+   background-image: url(../imagem/fundoaside.png);
+
+}
+
+.btnofertas {
+	font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.btnofertas:before, .btnofertas:after {
+	content: "";
+	display: block;
+	width: 90px;
+	height: 3px;
+	background: #000000;
+	margin: 5px auto 5px auto;
+
+}
+/* ofertas da home */
+
+.secofertashome{padding-top: 70px;
+
+
+}
+
+.ofertahome1{ float: left;
+padding: 0px ;}
+
+.fotolook{
+  width: 240px;
+  height: 250px;
+  border: solid 0px;
+
+    
+}
+
+.precooferta{
+     width: 220px;
+  height: 112px;
+  border: solid 0px;
+margin-left: 10px;
+margin-bottom: 80px
+}
+
+.nomeroupa{
+text-align: center;
+margin: 5px 0px 0px 0px;
+font-weight: bold;
+
+}
+
+
+.precoreal{ float:left;
+    text-decoration: line-through;
+    font-style: italic;
+    font-family: arial, sans-serif;
+    margin: 0px 7px 0px 10px;
+}
+
+.precovenda{float:left;
+ font-family: arial, sans-serif;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;}
+
+.precoparcelado{float:left;
+font-family: Times New Roman, serif;
+    font-style: italic;
+    margin: 0px 7px 3px 10px;
+}
+
+/* aqui começa o input da descricao do look1*/
+
+/* Esconde o input e o conteúdo */
+.ativador-input1, .box-texto1 { display: none ; }
+
+/* Mostra o conteúdo ao ativar */
+.ativador-input1:checked + 
+.ativador-box1 .box-texto1 {
+  display: block
+}
+
+.box-titulo1 {
+  cursor: pointer;
+font-weight: bold;
+  padding: 0 5px;
+  color: rgba(0, 0, 0, 0.45);
+  display: block;
+  width: calc(100% - 20px);
+}
+
+.box-titulo1::after {
+  content:'+';
+  float: left;
+  transition: transform .3s ease;
+}
+.box-texto1 {
+ 
+  color: #393939;
+  padding: 2px;
+  font-size: .8em;
+ margin-left: 5px;
+   
+}
+
+.ativador-input1:checked + 
+.ativador-box1 .box-titulo1::after {
+  transform: rotate(45deg) scale(1.08);
+}
+
+.btnoferta1 {
+    margin-left: 110px;
+	border: 2px solid #6a3f5f;
+	padding: 4px 20px;
+	color: #ffffff;
+    background-color: #6a3f5f;
+	font-size: .8em;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .05em;
+	transition: all .5s ease;
+    
+}
+
+.btnoferta1:hover {
+	color: #fff;
+	border-color: #fff;
+    font-weight: bold;
+    
+}
+
+.btnoferta1.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+    
+    
+}
+/* aqui começa o input da descricao do look 2*/
+
+/* Esconde o input e o conteúdo */
+.ativador-input2, .box-texto2 { display: none ; }
+
+/* Mostra o conteúdo ao ativar */
+.ativador-input2:checked + 
+.ativador-box2 .box-texto2 {
+  display: block
+}
+
+.box-titulo2 {
+  cursor: pointer;
+font-weight: bold;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.45);
+  display: block;
+  width: calc(100% - 20px);
+}
+
+.box-titulo2::after {
+  content:'+';
+  float: left;
+  transition: transform .3s ease;
+}
+.box-texto2 {
+ 
+  color: #393939;
+  padding: 2px;
+  font-size: .8em;
+ margin-left: 5px;
+}
+
+.ativador-input2:checked + 
+.ativador-box2 .box-titulo2::after {
+  transform: rotate(45deg) scale(1.08);
+}
+.btnoferta2 {
+    margin-left: 110px;
+	border: 2px solid #6a3f5f;
+	padding: 4px 20px;
+	color: #ffffff;
+    background-color: #6a3f5f;
+	font-size: .8em;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .05em;
+	transition: all .5s ease;
+    
+}
+
+.btnoferta2:hover {
+	color: #fff;
+	border-color: #fff;
+    font-weight: bold;
+    
+}
+
+.btnoferta2.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+    
+    
+}
+/* aqui começa o input da descricao do look 3*/
+
+/* Esconde o input e o conteúdo */
+.ativador-input3, .box-texto3 { display: none ; }
+
+/* Mostra o conteúdo ao ativar */
+.ativador-input3:checked + 
+.ativador-box3 .box-texto3 {
+  display: block
+}
+
+.box-titulo3 {
+  cursor: pointer;
+font-weight: bold;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.45);
+  display: block;
+  width: calc(100% - 20px);
+}
+
+.box-titulo3::after {
+  content:'+';
+  float: left;
+  transition: transform .3s ease;
+}
+.box-texto3 {
+ 
+  color: #393939;
+  padding: 2px;
+  font-size: .8em;
+ margin-left: 5px;
+}
+
+.ativador-input3:checked + 
+.ativador-box3 .box-titulo3::after {
+  transform: rotate(45deg) scale(1.08);
+}
+.btnoferta3 {
+    margin-left: 110px;
+	border: 2px solid #6a3f5f;
+	padding: 4px 20px;
+	color: #ffffff;
+    background-color: #6a3f5f;
+	font-size: .8em;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .05em;
+	transition: all .5s ease;
+    
+}
+
+.btnoferta3:hover {
+	color: #fff;
+	border-color: #fff;
+    font-weight: bold;
+    
+}
+
+.btnoferta3.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+    
+    
+}
+/* aqui começa o input da descricao do look 4*/
+
+/* Esconde o input e o conteúdo */
+.ativador-input4, .box-texto4 { display: none ; }
+
+/* Mostra o conteúdo ao ativar */
+.ativador-input4:checked + 
+.ativador-box4 .box-texto4 {
+  display: block
+}
+
+.box-titulo4 {
+  cursor: pointer;
+font-weight: bold;
+font-size: .9em;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.45);
+  display: block;
+  width: calc(100% - 20px);
+}
+
+.box-titulo4::after {
+  content:'+';
+  float: left;
+  transition: transform .3s ease;
+}
+.box-texto4 {
+ 
+  color: #393939;
+  padding: 2px;
+  font-size: .8em;
+ margin-left: 5px;
+}
+
+.ativador-input4:checked + 
+.ativador-box4 .box-titulo4::after {
+  transform: rotate(45deg) scale(1.08);
+}
+.btnoferta4 {
+    margin-left: 110px;
+	border: 2px solid #6a3f5f;
+	padding: 4px 20px;
+	color: #ffffff;
+    background-color: #6a3f5f;
+	font-size: .8em;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .05em;
+	transition: all .5s ease;
+    
+}
+
+.btnoferta4:hover {
+	color: #fff;
+	border-color: #fff;
+    font-weight: bold;
+    
+}
+
+.btnoferta4.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+    
+    
+}
+
+/* Inicio secao localizacao home */
+
+.enderecohome{
+height: 450px;
+border: solid 1px;
+margin-bottom: 55px;
+}
+.mapahome{
+height: 450px;
+
+border: solid 1px;
+margin-bottom: 55px;
+}
+.mapshome{
+width: 100%;
+height: 100%;
+}
+
+.titulopadrao{
+ font-family: Arial, sans-serif;
+  font-size: 1.5em;
+font-weight: bold;
+text-align: center;
+padding: 50px 20px 20px 20px;
+}
+
+.txtendereco{
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+text-align: center;
+    margin: 0px 70px 20px 70px;
+    line-height: 2;
+    
+}
+
+.txtcontato{
+font-family: Arial, sans-serif;
+text-align: center;
+    margin: 0px 70px 20px 70px;
+    line-height: 2;
+}
+
+.txthorario{
+ font-family: Arial, sans-serif;
+text-align: center;
+    margin: 0px 100px 20px 100px;
+    line-height: 2;
+}
+
